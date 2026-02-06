@@ -2,41 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TOKYO SUSHI</title>
+
+  <!-- Google Font（海外ウケ・静） -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: #0f0f0f;
-      color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    body {
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
     }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.25);
+    }
+
     .container {
+      position: relative;
+      z-index: 2;
       text-align: center;
+      color: #eaeaea;
     }
-    img {
-      max-width: 90vw;
-      max-height: 70vh;
+
+    .title {
+      letter-spacing: 0.25em;
+      font-size: 22px;
+      margin-bottom: 48px;
+      opacity: 0.85;
     }
-    .enter {
-      margin-top: 24px;
-      font-size: 14px;
-      letter-spacing: 0.2em;
-      opacity: 0.7;
+
+    .buttons {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 34px;
+      border: 1px solid rgba(255,255,255,0.35);
+      color: #eaeaea;
       text-decoration: none;
-      color: white;
+      font-size: 16px;
+      letter-spacing: 0.15em;
+      transition: all 0.35s ease;
+      background: rgba(0,0,0,0.25);
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.08);
+      letter-spacing: 0.25em;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 18px;
+      }
+      .btn {
+        padding: 12px 26px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
+  <div class="overlay"></div>
+
   <div class="container">
-    <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469" alt="TOKYO SUSHI" />
-    <div>
-      <a class="enter" href="https://notion.site/">ENTER</a>
+    <div class="title">TOKYO SUSHI</div>
+
+    <div class="buttons">
+      <!-- Buy : Jupiter SOL → TSUSHI 直スワップ -->
+      <a
+        class="btn"
+        href="https://jup.ag/swap/SOL-CRBQb54n3z6W1EaD9CwBXjTJ42aYigSCxJksutM7WWAk"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        BUY
+      </a>
+
+      <!-- Enter : Notion -->
+      <a
+        class="btn"
+        href="https://gaudy-fountain-233.notion.site/TOKYO-SUSHI-2fdc4899c21a801e9c6becdec34efc49"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ENTER
+      </a>
     </div>
   </div>
 </body>

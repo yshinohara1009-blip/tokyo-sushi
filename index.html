@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TOKYO SUSHI</title>
 
-  <!-- Google Font（海外ウケ・静） -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
@@ -38,6 +38,7 @@
       color: #eaeaea;
     }
 
+    /* TOKYO SUSHI（← 位置はここ、今のまま） */
     .title {
       letter-spacing: 0.25em;
       font-size: 22px;
@@ -45,36 +46,27 @@
       opacity: 0.85;
     }
 
+    /* BUY / ENTER（← 皿の下に来る調整はここ） */
     .buttons {
       display: flex;
       gap: 24px;
       justify-content: center;
+      margin-top: -16px; /* ★ここが今回の調整ポイント */
     }
 
     .btn {
-      padding: 14px 34px;
-      border: 1px solid rgba(255,255,255,0.35);
-      color: #eaeaea;
+      border: 1px solid rgba(255,255,255,0.45);
+      padding: 14px 36px;
       text-decoration: none;
-      font-size: 16px;
+      color: #eaeaea;
       letter-spacing: 0.15em;
-      transition: all 0.35s ease;
-      background: rgba(0,0,0,0.25);
+      font-size: 14px;
+      transition: all 0.25s ease;
     }
 
     .btn:hover {
-      background: rgba(255,255,255,0.08);
-      letter-spacing: 0.25em;
-    }
-
-    @media (max-width: 600px) {
-      .title {
-        font-size: 18px;
-      }
-      .btn {
-        padding: 12px 26px;
-        font-size: 14px;
-      }
+      border-color: rgba(255,255,255,0.85);
+      color: #ffffff;
     }
   </style>
 </head>
@@ -86,7 +78,7 @@
     <div class="title">TOKYO SUSHI</div>
 
     <div class="buttons">
-      <!-- Buy : Jupiter SOL → TSUSHI 直スワップ -->
+      <!-- BUY : Jupiter SOL → TSUSHI -->
       <a
         class="btn"
         href="https://jup.ag/swap/SOL-CRBQb54n3z6W1EaD9CwBXjTJ42aYigSCxJksutM7WWAk"
@@ -96,7 +88,7 @@
         BUY
       </a>
 
-      <!-- Enter : Notion -->
+      <!-- ENTER : Notion -->
       <a
         class="btn"
         href="https://gaudy-fountain-233.notion.site/TOKYO-SUSHI-2fdc4899c21a801e9c6becdec34efc49"

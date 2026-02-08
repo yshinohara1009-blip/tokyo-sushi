@@ -1,102 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TOKYO SUSHI</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Cormorant Garamond', serif;
-      background: #000;
-    }
-
-    body {
-      background: url('bg.png.PNG') no-repeat center center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.25);
-    }
-
-    .container {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: #eaeaea;
-      transform: translateY(-40px);
-    }
-
-    .title {
-      letter-spacing: 0.28em;
-      font-size: 22px;
-      opacity: 0.9;
-      margin-bottom: 24px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      margin-top: 400px; /* 皿の下 */
-    }
-
-    .btn {
-      padding: 14px 42px;
-      border: 1px solid rgba(255,255,255,0.45);
-      color: #eaeaea;
-      text-decoration: none;
-      letter-spacing: 0.18em;
-      font-size: 13px;
-      background: transparent;
-      transition: all 0.25s ease;
-    }
-
-    .btn:hover {
-      background: rgba(255,255,255,0.08);
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JAPAN SUSHI MARKET</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="overlay"></div>
+  <main class="hero">
+    <header class="brand">
+      <div class="title">JAPAN SUSHI MARKET</div>
+      <div class="tagline">Eat. Trade. Burn.</div>
+    </header>
 
-  <div class="container">
-    <div class="title">TOKYO SUSHI</div>
-
-    <div class="buttons">
-      <!-- BUY : Phantom Swap 直行（SOL → TSUSHI 固定） -->
-      <a
-        class="btn"
-        href="https://phantom.app/ul/swap?inputCurrency=SOL&outputCurrency=CRBQb54n3z6W1EaD9CwBXjTJ42aYigSCxJksutM7WWAk"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        BUY
-      </a>
-
-      <!-- ENTER : Notion（世界の入口） -->
-      <a
-        class="btn"
-        href="https://gaudy-fountain-233.notion.site/TOKYO-SUSHI-2fdc4899c21a801e9c6becdec34efc49"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ENTER
-      </a>
-    </div>
-  </div>
+    <section class="actions">
+      <a class="btn primary" href="#" id="enter">ENTER MARKET</a>
+      <a class="btn" href="#" id="log">VIEW LOG</a>
+    </section>
+  </main>
 </body>
 </html>
